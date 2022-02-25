@@ -1,0 +1,32 @@
+## INSTALLATION / CONFIG
+
+composer create-project symfony/skeleton
+
+mv skeleton/* ./
+mv skeleton/.* ./
+rmdir skeleton
+
+composer require twig annotations asset      :  Twig, the flexible, fast, and secure template language for PHP / Docblock Annotations Parser / Manages URL generation and versioning of web assets such as CSS stylesheets, JavaScript files and image files
+composer require --dev maker profiler        :  Maker helps you create empty commands, controllers, form classes, tests and more so you can forget about writing boilerplate code / A pack for the Symfony web profiler
+composer require --dev symfony/debug-bundle  :  Provides a tight integration of the Symfony VarDumper component and the ServerLogCommand from MonologBridge into the Symfony full-stack framework
+
+composer require orm (symfony/orm-pack)
+composer require symfony/expression-language  :  Provides an engine that can compile and evaluate expressions
+
+DATABASE_URL="mysql://explorateur:Ereul9Aeng@127.0.0.1:3306/blog?serverVersion=MariaDB-10.3.32&charset=utf8mb4"
+
+
+## DOCTRINE
+
+sy doctrine:database:create
+
+sy make:entity <Nom>
+sy make:migration
+sy doctrine:migrations:migrate
+Refaire 2ème et 3ème étapes si modification de l'entité (de l'étape 1)
+
+sy make:cont  <Nom>  :  Créer un controller + son template
+
+
+
+
