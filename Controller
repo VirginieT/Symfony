@@ -1,0 +1,23 @@
+## CONTROLLER
+
+- Ajouter un docbloc à la classe du Controller, afin de créer le préfixe de toutes les routes = Factorisation.
+Y ajouter aussi la methode: methods={"GET"} par exemple.
+
+Voir le routing: sy debug:router  /  sy de:r  /  sy :router
+
+- Dans la fonction list:
+  - Utiliser PostRepository $postRepository dans la fonction, afin d'être sûr de n'avoir qu'un seul objet pendant le traitement de la requete
+  - préparer les données
+  - récupération de tous les articles de la BDD
+  - affichage de la vue en fournissant les articles sus-récupérées
+
+- Dans les fonctions add, delete, update: 
+  - Ajouter le suffixe de la route dans le docbloc
+  - Ajouter dans la fontcion la valeur utile à la route. ex: title dans la route => string $title dans la fonction
+  - créer un objet = préparer les données
+  - hydrater l'objet
+  - dire à Doctrine de le prendre en charge : $entityManager
++ Ajouter ManagerRegistry $doctrine dans la fonction. 
+  - dire à Doctrine d'exécuter les requêtes
+  - rediriger vers la page d'accueil
+  
