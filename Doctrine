@@ -1,0 +1,10 @@
+## DOCTRINE
+
+sy doctrine:database:create
+
+sy make:entity <Nom>
+sy make:migration
+sy doctrine:migrations:migrate
+Refaire 2ème et 3ème étapes si modification de l'entité (de l'étape 1)
+
+sy make:cont  <Nom>  :  Créer un controller + son template
