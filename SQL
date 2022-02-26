@@ -1,0 +1,2 @@
+## Exemple commande
+- Ajouter des author_id aux articles : update post set author_id = mod(id, 5) +1;
