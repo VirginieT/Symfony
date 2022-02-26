@@ -1,0 +1,5 @@
+Quand on rajoute une page dans un MVC, on doit:
+- Déclarer la route (Controller)
+-
+-
+-
