@@ -22,3 +22,5 @@ Voir le routing: sy debug:router  /  sy de:r  /  sy :router
   - rediriger vers la page d'accueil
   
 Un controlleur doit renvoyer un objet response => return
+
+Injection de dépendance : rajout d'un use
