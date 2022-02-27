@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Détail d'un article{% endblock %}
+
+{% block body %}
+<h1>Détail d'un article</h1>
+
+<h2>{{ post.title }}</h2>
+
+<h3>Auteur</h3>
+<p>écrit par {{ post.author.firstName ~ ' ' ~ post.author.lastName }}</p>
+
+<h3>Tags associés</h3>
+{% for tag in post.tags %}
+    <div class="border: 1px solid black; border-radius: .5em;float:right: 1em;">
+    {{ tag.name }}
+    </div>
+{% else %}
+    <p>Aucun tag pour le moment</p>
+{% endfor %} 
+
+<h3>Commentaires</h3>
+{% for comment in post.comments %}
+    <article style="padding:1em;width=20%;margin-right:2em;border:1px solid blue;display:inline-block">
+        <h2>{{ comment.userName }}</h2>
+        <p> {{ comment.body }}</p>
+    </article>
+{% else %}
+    <p>Aucun commentaire pour le moment</p>
+{% endfor %}
+<hr>
+<form method="post">
+    <div>
+        <label> Pseudo <input type="text" name="pseudo" /></label>
+    </div>
+    <div>
+        <label> Message <textarea name="message"></textarea></label>
+    </div>
+    <button> Envoyer </button>
+</form>
+{% endblock %}
