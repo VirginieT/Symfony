@@ -21,3 +21,4 @@ Voir le routing: sy debug:router  /  sy de:r  /  sy :router
   - dire à Doctrine d'exécuter les requêtes
   - rediriger vers la page d'accueil
   
+Un controlleur doit renvoyer un objet response => return
