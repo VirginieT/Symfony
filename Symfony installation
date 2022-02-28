@@ -28,5 +28,63 @@ Refaire 2ème et 3ème étapes si modification de l'entité (de l'étape 1)
 sy make:cont  <Nom>  :  Créer un controller + son template
 
 
+## BDD
+
+## Dans la vie de tous les jours
+
+Créer la BDD que en dev avec un user admin existant
+
+```sh
+bin/console doctrine:database:create
+```
+
+Créer / modifier une entité
+
+```sh
+bin/console make:entity
+```
+
+Créer une migration
+
+```sh
+bin/console make:migration
+```
+
+Appliquer la migration
+
+```sh
+bin/console doctrine:migrations:migrate
+```
+
+## D'autres commandes
+
+Supprimer la BDD
+
+```sh
+bin/console doctrine:database:drop --force
+```
+
+Aller vers une migration particulière
+
+```sh
+bin/console doctrine:migrations:migrate [FQCN de la migration à atteindre]
+```
+
+Vérifier le schéma de la BDD ( si on a modifier nos annotations doctrine à la mano )
+
+```sh
+bin/console doctrine:schema:validate
+```
+
+
+## Sinon RTFM
+
+```sh
+# lister toutes les commandes
+bin/console
+
+# avoir l'aide d'une commande particulière ( ajouter --help au nom de la commande )
+bin/console doctrine:migrations:migrate --help
+```
 
 
