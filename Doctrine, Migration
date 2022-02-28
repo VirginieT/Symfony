@@ -8,3 +8,11 @@ sy doctrine:migrations:migrate
 Refaire 2ème et 3ème étapes si modification de l'entité (de l'étape 1)
 
 sy make:cont  <Nom>  :  Créer un controller + son template
+
+
+
+## MIGRATION
+
+On peut naviguer dans les migrations en les rappelant : on peut les modifier, supprimer.
+
+
