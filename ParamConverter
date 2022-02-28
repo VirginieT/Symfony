@@ -1,0 +1,3 @@
+utilise le repository pour faire le select
+quand il voit qu'on demande un id dans l'url, et que dans la loiste des parametre il y a une variable (entité) et champs id, il va faire un repository et éventuellement 04.
+sa fonctionnalité est de faire des requetes dans la base de donnée. il rend un service.
