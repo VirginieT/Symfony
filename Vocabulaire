@@ -50,3 +50,16 @@ class A {
 ```
 
 Dans le cadre la fonction qui s'exécute lorsque l'on appelle une route => une action
+
+
+## Persistance
+doctrine vient avec un ensemble de classes
+toutes les classes de rpository, annotaions etc
+dans repository : classe abstariote qui contient les methodes find, find all etc
+entitymanager écrit dans la bdd : update insert, delete. l'em pour savoir quelle requet il va ecrire, il doit etre au courant d'un objet a gerer.
+un tableau avec tous les objets qu'il doit suivre et dont il doit gérer lt'etat. 
+quand on fait un find, le repository va prévenir l'em. quand il écrit dans la bdd, on utilise le flush
+il faut qu'il vérifie son état au moment ou on fait le find uis le persisit pour savoir quelle requete exécuter.
+si on fait des modif, quand on fait un persist il doit savoir si on a modifié
+si dans mon code je crée une nouvelle clasee, il faut ajouter à la liste de l'em, pour qu'il sache qu'il fait un insert. (quand on fait le persist ça ajoute dans l'em)
+le flush exécute la requete
