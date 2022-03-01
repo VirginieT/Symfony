@@ -1,0 +1,8 @@
+## FIXTURES
+composer require --dev orm-fixtures
+
+php bin/console doctrine:fixtures:load
+
+
+## FAKER
+composer require fakerphp/faker
