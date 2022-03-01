@@ -13,6 +13,7 @@ sy make:cont  <Nom>  :  Créer un controller + son template
 
 ## MIGRATION
 
-On peut naviguer dans les migrations en les rappelant : on peut les modifier, supprimer.
+- On peut naviguer dans les migrations en les rappelant : on peut les modifier, supprimer.
 
-
+- Si ce message : [WARNING] You have 2 available migrations to execute
+=> supprimer les migration dans le repo
