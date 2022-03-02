@@ -5,6 +5,7 @@
 - Installer le composant
 
 `composer require symfony/form`
+`composer require symfony/validator`
 
 - Créer la classe de formulaire
 
@@ -32,3 +33,22 @@ if($form->isSubmitted() && $form->isValid)
     // redirection
 }
 ```
+
+
+## A regarder :
+E09-04-Forms et E10 correction du challenge formulaire
+
+où est l'info que je veux afficher: où est la valeur, comment l'écrire (récupérer ce qui est dans la BDD, pour faire bosser le controller qui va l'afficher).
+
+
+
+
+
+
+
+
+
+
+
+
+
