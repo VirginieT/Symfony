@@ -49,6 +49,17 @@ où est l'info que je veux afficher: où est la valeur, comment l'écrire (récu
 
 
 
+<?php
+
+namespace App\Controller\Backoffice;
+
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
+class MovieController extends AbstractController {
+    
+
+
+}
 
 
 
