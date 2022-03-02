@@ -22,6 +22,7 @@ sy do:fi:lo --group=RandomFixtures
 Si on veut empecher qu'il supprime les anciennes données (au lieu de les flush)
 sy do:fi:lo --group=ALaMAnoFixtures --append
 
-Si on veut empecher ques les identifiants supprimés restent figés, et se remettent à jour
+Si on veut empecher que les identifiants supprimés restent figés, et se remettent à jour
 (mais ne fonctionne pas avec les Foreign Key => rentrer cette commande dans SQL: SET GLOBAL foreign_key_checks=OFF)
 sy do:fi:lo --group=ALaMAnoFixtures --purge-with-truncate
+=> il est possible de créer un alias ou un composant en ligne de commande pour gérer  le problème des identifiants qui ne se remmetent pas à partir de 1 dans la BDD.
