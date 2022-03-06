@@ -1,14 +1,40 @@
-## FIXTURES (à la mano)
+### Loading Fixtures (données de test)
 
-https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html
+[Documentation générale](https://symfony.com/doc/current/DoctrineFixturesBundle/index.html#writing-fixtures)
 
+```sh
+# installation du composant :
 composer require --dev orm-fixtures
+```
 
-Once your fixtures have been written, load them by executing this command:
-sy doctrine:fixtures:load
+```sh
+# installation du faker pour générer des fausses données
+composer require --dev fakerphp/faker
+```
+
+```sh
+# update les fixtures dans la BDD
+bin/console doctrine:fixtures:load
+```
+
+```sh
+# aide pour découvrir les commandes d'options
+bin/console doctrine:fixtures:load --help
+```
+
+```sh
+# Ne delete pas mais rajoute les nouvelles entrées au début
+bin/console doctrine:fixtures:load --append
+```
+
+```sh
+# remet les id au début. Seulement si une entité n'a pas de clé étrangère
+bin/console doctrine:fixtures:load --purge-with-truncate
+```
 
 
-## FAKER
+
+### FAKER
 
 https://fakerphp.github.io
 
