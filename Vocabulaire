@@ -52,6 +52,8 @@ class A {
 Dans le cadre la fonction qui s'exécute lorsque l'on appelle une route => une action
 
 
+
+
 ## Persistance
 doctrine vient avec un ensemble de classes
 toutes les classes de rpository, annotaions etc
