@@ -1,29 +1,38 @@
-# Formulaires
+### Forms
+
 
 [La doc](https://symfony.com/doc/current/forms.html)
 
-- Installer le composant
 
-`composer require symfony/form`
-`composer require symfony/validator`
+```sh
+# installation du composant :
+composer require symfony/form
+```
+```sh
+# - Créer la classe de formulaire dans le dossier Forms :
+bin/console make:form
+```
 
-- Créer la classe de formulaire
+## Dans le Controller
 
-`bin/console make:form`
+- créer l'objet formulaire et le founir à la vue (avec `$this->renderForm`)
 
-- Configurer la classe en spécifiant les types et les options pour chaque champ
 
-## Dans le controller
-
-- créer l'objet formulaire et le founir à la vue ( avec `$this->renderForm` )
-
-## Dans la vue twig
+## Dans la vue Twig
 
 - Afficher le formulaire grace aux fonctions form_ [Cf La doc](https://symfony.com/doc/current/form/form_customization.html)
 
 ## Traitement du formulaire ( retour dans le meme controller )
 
-on ajoute la partie
+A chaque formulaire, pensez à suivre les étapes suivantes :
+
+1. Vérification des données
+2. Valider les donées
+3. Traiter les données
+4. Message Flash
+5. Redirection
+
+on ajoute la partie :
 
 ```php
 $form->handleRequest($request)
@@ -32,6 +41,13 @@ if($form->isSubmitted() && $form->isValid)
     // traitement du formulaire 
     // redirection
 }
+```
+
+## validation du formulaire
+
+```sh
+# installer le composant :
+composer require symfony/validator
 ```
 
 
@@ -44,22 +60,6 @@ où est l'info que je veux afficher: où est la valeur, comment l'écrire (récu
 
 
 
-
-
-
-
-
-<?php
-
-namespace App\Controller\Backoffice;
-
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-
-class MovieController extends AbstractController {
-    
-
-
-}
 
 
 
