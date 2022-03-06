@@ -7,8 +7,7 @@ mv skeleton/.* ./
 rmdir skeleton
 
 composer require twig annotations asset form orm validator    
-composer require --dev maker profiler debug-bundle faker fixtures      
-composer require --dev symfony/debug-bundle  
+composer require --dev maker profiler debug-bundle fakerphp/faker ormfixtures      
 
 composer require symfony/expression-language  :  Provides an engine that can compile and evaluate expressions
 
