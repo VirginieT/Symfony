@@ -1,15 +1,4 @@
 ## DOCTRINE
-
-sy doctrine:database:create
-
-sy make:entity <Nom>
-sy make:migration
-sy doctrine:migrations:migrate
-Refaire 2ème et 3ème étapes si modification de l'entité (de l'étape 1)
-
-sy make:cont  <Nom>  :  Créer un controller + son template
-
-
 Doctrine est un ORM ( Object Relational Mapper ) qui permet de relier notre BDD à nos objets PHP.
 
 Quelques fonctionnalités d'un ORM :
@@ -17,12 +6,12 @@ Quelques fonctionnalités d'un ORM :
 - effectuer des requêtes dans la BDD
 - analyser nos objets pour mapper ( = associer ) les propriétés des objets et les champs de la BDD.
 
-## Installation
+### Installation
 
 - [La documentation de Doctrine dans Symfony](https://symfony.com/doc/current/doctrine.html#installing-doctrine)
 - [La documentation du projet Doctrine](https://www.doctrine-project.org/)
 
-## Configuration
+### Configuration
 
 Pour utiliser doctrine il faut spécifier une valeur de `connection string` à utiliser dans les variables d'environnement
 
@@ -32,14 +21,22 @@ Pour utiliser doctrine il faut spécifier une valeur de `connection string` à u
 DATABASE_URL="mysql://demo_orm:demo_orm_password@127.0.0.1:3306/demo_orm?serverVersion=mariadb-10.3.32&charset=utf8mb4"
 ```
 
-### Supprimer la BDD
-
 ```sh
-bin/console doctrine:database:drop --force
+sy doctrine:database:create
+
+sy doctrine:database:drop --force
 ```
 
 
 ## MIGRATION
+
+sy make:entity <Nom>
+sy make:migration
+sy doctrine:migrations:migrate
+Refaire 2ème et 3ème étapes si modification de l'entité (de l'étape 1)
+
+sy make:cont  <Nom>  :  Créer un controller + son template
+
 
 - On peut naviguer dans les migrations en les rappelant : on peut les modifier, supprimer.
 
