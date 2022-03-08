@@ -1,1 +1,5 @@
 C'est la classe qui permet de faire des sélect.
+
+On y fait les requetes, il y en a déjà de proposées.
+
+Enfant du service entityrepository
