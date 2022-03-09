@@ -1,0 +1,19 @@
+# Services
+
+
+## Injection de dépendance
+
+C'est réalisé grâce au conteneur de service.
+
+
+Comment on fait hors des controllers
+
+> on injecte dans le constructeur
+
+Mais on injecte quoi ?
+
+à la dure, on inspecte le conteneur de Service
+
+> bin/console debug:autowiring
+
+Qu'est ce qu'il connait?
