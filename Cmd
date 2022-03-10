@@ -1,1 +1,6 @@
-sy make:command
+- sy make:command
+- app:movie:list-bad-slugged
+
+- Blabla dans le fichier
+
+- sy app:movie:list
