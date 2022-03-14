@@ -6,10 +6,11 @@ mv skeleton/* ./
 mv skeleton/.* ./
 rmdir skeleton
 
+
 composer require twig annotations asset form orm validator    
 composer require --dev maker profiler debug-bundle fakerphp/faker ormfixtures      
-
 composer require symfony/expression-language  :  Provides an engine that can compile and evaluate expressions
+
 
 DATABASE_URL="mysql://explorateur:Ereul9Aeng@127.0.0.1:3306/blog?serverVersion=MariaDB-10.3.32&charset=utf8mb4"
 
@@ -28,61 +29,55 @@ sy make:cont  <Nom>  :  Créer un controller + son template
 
 ## BDD
 
-## Dans la vie de tous les jours
-
 Créer la BDD que en dev avec un user admin existant
-
 ```sh
-bin/console doctrine:database:create
+sy doctrine:database:create
 ```
 
 Créer / modifier une entité
-
 ```sh
-bin/console make:entity
+sy make:entity
 ```
 
 Créer une migration
-
 ```sh
-bin/console make:migration
+sy make:migration
 ```
 
 Appliquer la migration
-
 ```sh
-bin/console doctrine:migrations:migrate
+sy doctrine:migrations:migrate
 ```
 
 ## D'autres commandes
 
 Supprimer la BDD
-
 ```sh
-bin/console doctrine:database:drop --force
+sy doctrine:database:drop --force
 ```
 
 Aller vers une migration particulière
-
 ```sh
-bin/console doctrine:migrations:migrate [FQCN de la migration à atteindre]
+sy doctrine:migrations:migrate [FQCN de la migration à atteindre]
 ```
 
 Vérifier le schéma de la BDD ( si on a modifier nos annotations doctrine à la mano )
-
 ```sh
-bin/console doctrine:schema:validate
+sy doctrine:schema:validate
 ```
 
 
 ## Sinon RTFM
 
-```sh
+
 # lister toutes les commandes
+```sh
 bin/console
+```
 
 # avoir l'aide d'une commande particulière ( ajouter --help au nom de la commande )
-bin/console doctrine:migrations:migrate --help
+```sh
+sy doctrine:migrations:migrate --help
 ```
 
 
