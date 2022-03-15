@@ -1,0 +1,10 @@
+composer require api
+
+Sérialiser => transformer en Json
+
+
+composer require "lexik/jwt-authentication-bundle"
+sy lex:jwt:generate-k    => Generate public/private keys for use in your application
+
+
+composer req cors
