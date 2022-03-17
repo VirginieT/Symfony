@@ -1,0 +1,61 @@
+# Discussion sur les serveurs / MEP
+
+Un serveur :
+
+- en attente d'une demande d'un client
+
+Serveur Logiciel = software
+    - web ( apache / php + nginx + IIS + Tomcat ) :80
+    - BDD ( MariaDB + SQLServer + Oracle ) : 3306
+    - Mail ( gére l'envoi / réception d'email )
+    - Jeux ( )
+    - FTP ( Filezilla server )
+
+Serveur ( machine = hardware )
+    - connectée et disponible
+
+différent types de serveur :
+Physique / Virtuel
+Mutualisé / Dédié
+
+en général pour économiser les ressources hardware du serveur, on n'installe pas d'interface graphique
+on utilisera uniquement la ligne de commande
+
+git + cle ssh
+serveur BDD (MariaDB / mysql)
+php
+editeur de texte ( nano / vim )
+serveur web (apache)
+composer
+
+vérifier la présence des logiciels suivants
+
+- mariadb `mysql --version`
+- git `git --version`  
+- php `php --version`
+- apache `apache2 -v`
+- composer `composer --version`
+- nano `nano --version`
+
+Installation :
+
+- git clone
+- composer install
+- créer un utilisateur en BDD
+- configurer la chaine de connexion à la BDD dans le .env.local
+- créer la BDD
+- créer la structure de BDD
+- créer un user ADMIN
+- installer le apache-pack
+- debugger la connexion en ajoutant le code suivant au LoginFormAuthenticator
+
+```php
+    public function supports(Request $request): bool
+    {
+        return $request->isMethod('POST') && $this->getLoginUrl($request) === $request->getRequestUri();
+    }
+```
+
+Attention : 
+
+Le user sur vos VM n'est pas le meme que dans les fiches récap. (ubuntu sur aws vs student sur les vm oclock )
