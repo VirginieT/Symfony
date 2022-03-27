@@ -9,15 +9,15 @@ rmdir skeleton
 
 composer require twig annotations asset form orm validator    
 composer require --dev maker profiler debug-bundle fakerphp/faker ormfixtures      
-composer require symfony/expression-language  :  Provides an engine that can compile and evaluate expressions
+composer require symfony/expression-language  
 
 
 DATABASE_URL="mysql://explorateur:Ereul9Aeng@127.0.0.1:3306/blog?serverVersion=MariaDB-10.3.32&charset=utf8mb4"
 
+sy doctrine:database:create
+
 
 ## DOCTRINE
-
-sy doctrine:database:create
 
 sy make:entity <Nom>
 sy make:migration
