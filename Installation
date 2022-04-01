@@ -7,6 +7,8 @@ mv skeleton/.* ./
 rmdir skeleton
 
 
+composer install
+
 composer require twig annotations asset form orm validator    
 composer require --dev maker profiler debug-bundle fakerphp/faker ormfixtures      
 composer require symfony/expression-language  
