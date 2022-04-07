@@ -1,0 +1,18 @@
+symfony serve
+
+explorateur.exe .
+
+
+sudo service mysql start
+sudo mysql
+
+show databases;
+
+CREATE USER 'explorateur'@'localhost' IDENTIFIED BY 'Eureul85';
+GRANT ALL PRIVILEGES ON bouledepoils.* TO 'explorateur'@'localhost';
+
+SELECT User, Host FROM mysql.user;
+SELECT User, Host, Password, password_expired FROM mysql.user;
+SELECT * FROM mysql.db WHERE Db = 'bouledepoils'\G;
+
+mysql -u admin -p
