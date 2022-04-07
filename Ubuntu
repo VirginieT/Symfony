@@ -7,6 +7,7 @@ sudo service mysql start
 sudo mysql
 
 show databases;
+mysqlshow db_name
 
 CREATE USER 'explorateur'@'localhost' IDENTIFIED BY 'Eureul85';
 GRANT ALL PRIVILEGES ON bouledepoils.* TO 'explorateur'@'localhost';
