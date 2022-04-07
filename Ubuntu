@@ -6,6 +6,9 @@ explorateur.exe .
 sudo service mysql start
 sudo mysql
 
+mysql> select * from animal
+mysql> select * from association;
+
 show databases;
 mysqlshow db_name
 
