@@ -27,15 +27,8 @@ sy make:migration
 sy doctrine:migrations:migrate
 Refaire 2ème et 3ème étapes si modification de l'entité (de l'étape 1)
 
+
 sy make:cont  <Nom>  :  Créer un controller + son template
-
-
-## BDD
-
-Créer la BDD que en dev avec un user admin existant
-```sh
-sy doctrine:database:create
-```
 
 Créer / modifier une entité
 ```sh
@@ -52,7 +45,8 @@ Appliquer la migration
 sy doctrine:migrations:migrate
 ```
 
-## D'autres commandes
+
+## BDD
 
 Supprimer la BDD
 ```sh
@@ -67,6 +61,8 @@ sy doctrine:migrations:migrate [FQCN de la migration à atteindre]
 Vérifier le schéma de la BDD ( si on a modifier nos annotations doctrine à la mano )
 ```sh
 sy doctrine:schema:validate
+
+bin/console doctrine:schema:update --force
 ```
 
 
