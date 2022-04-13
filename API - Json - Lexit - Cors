@@ -6,5 +6,15 @@ Sérialiser => transformer en Json
 composer require "lexik/jwt-authentication-bundle"
 sy lex:jwt:generate-k    => Generate public/private keys for use in your application
 
+OU
+POST : http://0.0.0.0:8000/api/login_check
+{
+    "username": "admin@admin.com",
+    "password": "admin"
+}
+Pour générer un token, puis le coller (sans les "") dans 
+POST : http://0.0.0.0:8000/api/user/form
+-> Auth -> Bearer token
+
 
 composer req cors
