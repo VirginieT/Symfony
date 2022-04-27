@@ -34,7 +34,9 @@ sy make:cont  <Nom>  :  Créer un controller + son template
 Créer / modifier une entité
 ```sh
 sy make:entity
+php bin/console make:entity <>
 ```
+php bin/console make:crud <>
 
 Créer une migration
 ```sh
