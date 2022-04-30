@@ -8,6 +8,7 @@
 # installation du composant :
 composer require symfony/form
 ```
+
 ```sh
 # - Créer la classe de formulaire dans le dossier Forms :
 bin/console make:form
