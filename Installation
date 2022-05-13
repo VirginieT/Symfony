@@ -16,7 +16,7 @@ composer require api
 
 
 DATABASE_URL="mysql://explorateur:Ereul9Aeng@127.0.0.1:3306/blog?serverVersion=MariaDB-10.3.32&charset=utf8mb4"
-DATABASE_URL="mysql://explorateur:Eureul85@127.0.0.1:3306/bouledepoils?serverVersion=MariaDB-10.3.32&charset=utf8mb4"
+DATABASE_URL="mysql://explorateur:Eureul85@127.0.0.1:3306/bouledepoils?serverVersion=MariaDB-10.3.34&charset=utf8mb4"
 
 sy doctrine:database:create
 
