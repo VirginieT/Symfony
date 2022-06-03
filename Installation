@@ -12,9 +12,9 @@ composer install
 composer require twig annotations asset form orm validator symfony/security-bundle api
 composer require --dev maker profiler debug-bundle fakerphp/faker ormfixtures      
 composer require symfony/expression-language  
-composer require api
 
 
+symfony server:start
 
 
 sy doctrine:database:create
