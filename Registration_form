@@ -1,0 +1,34 @@
+https://symfony.com/doc/current/doctrine/registration_form.html
+
+https://symfony.com/doc/current/security.html#create-user-class
+Aller sur cette doc pour bien configurer et implémenter le formulaire d'enregistrement d'utilisateur.
+
+```
+php bin/console make:user
+```
+
+```
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+```
+
+```
+composer require symfonycasts/verify-email-bundle
+php bin/console make:registration-form
+```
+
+```
+php bin/console security:hash-password
+```
+
+```
+composer require --dev symfony/profiler-pack
+```
+
+```
+php bin/console make:controller Login
+```
+
+```
+php bin/console make:controller --no-template ApiLogin
+```
