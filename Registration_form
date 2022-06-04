@@ -32,3 +32,13 @@ php bin/console make:controller Login
 ```
 php bin/console make:controller --no-template ApiLogin
 ```
+
+```
+composer require symfonycasts/reset-password-bundle 
+```
+
+```
+```
+
+```
+```
