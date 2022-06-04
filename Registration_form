@@ -33,11 +33,13 @@ php bin/console make:controller Login
 php bin/console make:controller --no-template ApiLogin
 ```
 
+Pour le reset du mdp
 ```
 composer require symfonycasts/reset-password-bundle 
 ```
 
 ```
+php bin/console make:reset-password
 ```
 
 ```
