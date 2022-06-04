@@ -1,3 +1,3 @@
 # Symfony
 
-Notes de cours
+Notes de cours et recherches persos
