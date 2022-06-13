@@ -14,8 +14,10 @@ composer require --dev maker profiler debug-bundle fakerphp/faker ormfixtures
 composer require symfony/expression-language  
 
 
-symfony server:start
+symfony server:start   <sss>
 
+sudo service mysql start  <>
+sudo mysql -u root -p  <smsq>
 
 sy doctrine:database:create
 
