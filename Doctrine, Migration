@@ -41,4 +41,4 @@ sy make:cont  <Nom>  :  Créer un controller + son template
 - On peut naviguer dans les migrations en les rappelant : on peut les modifier, supprimer.
 
 - Si ce message : [WARNING] You have 2 available migrations to execute
-=> supprimer les migrations dans le repo
+=> supprimer les migrations dans le projet
