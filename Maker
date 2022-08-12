@@ -10,7 +10,7 @@ composer require --dev symfony/maker-bundle
 
 ```sh
 # Génère un Controller & un template associé
-`bin/console make:controller`
+`bin/console make:controller <...>`
 
 # Pour générer un Controller sans template
 `bin/console make:controller --no-template` 
@@ -23,7 +23,7 @@ Les entités sont les Models dans le cadre des ORM
 ```sh
 # Permet de configurer notre entité, ses propriétés et les relations entre entités.U
 # Une classe Repository est créée automatiquement.
-bin/console make:entity
+bin/console make:entity <...>
 ```
 
 ```sh
