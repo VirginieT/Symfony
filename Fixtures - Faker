@@ -1,6 +1,6 @@
 ### Loading Fixtures (données de test)
 
-[Documentation générale](https://symfony.com/doc/current/DoctrineFixturesBundle/index.html#writing-fixtures)
+[Documentation générale] https://symfony.com/doc/current/DoctrineFixturesBundle/index.html#writing-fixtures
 
 ```sh
 # installation du composant :
